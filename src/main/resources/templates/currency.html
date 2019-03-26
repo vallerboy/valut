@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="${cash}"></h1>
+
+
+    <form action="/" method="post">
+        Nazwa waluty (ISO): <input type="text" name="currency"> <br/>
+        Ilość kaski w PLN: <input type="text" name="pln"> <br/>
+        <input type="submit" value="Wyslij!">
+    </form>
+</body>
+</html>
